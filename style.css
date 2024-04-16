@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-um: #675D50;
+    --cor-dois: #A79277;
+    --cor-tres: #D1BB9E;
+    --cor-quatro: #EAD8C0;
+    --cor-cinco: #FFF2E1;
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+}
+.sem__espaco{
+    margin: 2%;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--cor-quatro);
+    color: var(--cor-um);
+    font-family: "Raleway", sans-serif;
+}
+
+.cabecalho{
+    padding: 1% 8%;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    gap: 24rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-quatro);
+}
+
+.sumario__links{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1rem;
+    color: var(--cor-um);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 7%;
+    margin-top: 6rem;
+    display: flex;
+}
+
+.imagem__pessoal{
+    width: 368px;
+}
+
+.apresentacao__titulo{
+    font-weight: 800;
+    font-size: 3.0rem;
+    margin-bottom: 2rem;
+}
+
+.apresentacao__paragrafo{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.apresentacao__links{
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.apresentacao__links__icons{
+    text-decoration: none;
+    align-items: center;
+    color: var(--cor-um);
+}
+
+.sobremim{
+    background-color: var(--cor-tres);
+    padding: 8%;
+}
+
+.sobremim__titulo{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.sobremim__paragrafo{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-right: 32%;
+}
+
+.titulos__segundarios{
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.skills__hobbies{
+    padding: 5% 8%;
+}
+
+.skills__hobbies__icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacao{
+    padding: 8%;
+    background-color: var(--cor-tres);
+}
+
+.formacao__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formacao__imagens{
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao__titulo__imagem{
+    font-size: 1.2rem;
+    margin: 2%;
+}
+
+.formacao__paragrafo__imagem{
+    font-size: 0.9rem;
+    margin: 2%;
+}
+
+.projetos{
+    padding: 8%;
+}
+
+.projetos__imagem__a{
+    display: flex;
+    margin: 3rem;
+    gap: 50px;
+}
+
+#imagem__a{
+    width: 600px; 
+    height: 360px;
+}
+
+#imagem__b{
+    width: 600px;
+    height: 360px;
+}
+
+.projetos__imagem__b{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3rem;
+    gap: 50px;
+}
+
+.projetos__imagem__descrição{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.bnt__repositorio{
+    text-decoration: none;
+    color: var(--cor-um);
+    background-color: var(--cor-tres);
+    border: 3px solid var(--cor-dois);
+    border-radius: 3px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    width: 85px;
+}
+
+.contato{
+    background-color: var(--cor-tres);
+    padding: 8%;
+}
+
+.contato__separacao{
+    display: flex;
+    gap: 2rem;
+}
+
+.contato__separacao__separacao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset{
+    border: none;
+    background-color: var(--cor-cinco);
+    width: 30rem;
+    height: 4.5rem;
+}
+
+.mensagem{
+    border: none;
+    background-color: var(--cor-cinco);
+    width: 40rem;
+    height: 8.5rem;
+}
+
+.input{
+    border: none;
+    background-color: var(--cor-cinco);
+    width: 40rem;
+    height: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    outline: none;
+}
+
+
+.input__mensagem{
+    border: none;
+    background-color: var(--cor-cinco);
+    width: 40rem;
+    height: 6rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+}
+
+.span-required{
+    font-size: 12px;
+    display: none;
+}
+
+.bnt__contato{
+    text-decoration: none;
+    color: var(--cor-um);
+    background-color: var(--cor-quatro);
+    border: 3px solid var(--cor-dois);
+    border-radius: 3px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 4px;
+    padding: 20px;
+}
+
+:hover.bnt__repositorio{
+    color: var(--cor-um);
+    background-color: var(--cor-quatro);
+}
+
+:hover.bnt__contato{
+    color: var(--cor-um);
+    background-color: var(--cor-tres);
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 1% 3%;
+        gap: 15rem;
+    }
+
+    .apresentacao{
+        padding: 3%;
+    }
+
+    .apresentacao__titulo{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .apresentacao__paragrafo{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .apresentacao__links{
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .sobremim{
+        padding: 3%;
+    }
+
+    .sobremim__paragrafo{
+        padding-right: 0%;
+    }
+
+    .skills__hobbies{
+        padding: 3%;
+    }
+
+    .skills__hobbies__icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formacao{
+        padding: 3%;
+    }
+
+    .formacao__icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .projetos{
+        padding: 3%;
+    }
+
+    .contato{
+        padding: 3%;
+    }
+
+    .contato__separacao{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .telefone{
+        display: none;
+    }
+}
+
+@media (max-width:1040px){
+    .cabecalho{
+        gap: 5rem;
+    }
+}
+
+
+@media (max-width: 900px){
+    .cabecalho{
+        gap: 25rem;
+    }
+
+    #id__sumario__links{
+        display: none;
+    }
+
+    .imagem__pessoal{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 290px;
+    }
+
+    .apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .projetos__imagem__a{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .projetos__imagem__b{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #imagem__a{
+        width: auto;
+        height: auto;
+    }
+
+    #imagem__b{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 720px){
+
+    .cabecalho{
+        gap: 10rem;
+    }
+   
+    .sem__espaco{
+        font-size: 0.8rem;
+    }
+
+    .bnt__repositorio{
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0.7rem;
+        width: 65px;
+    }
+
+    fieldset{
+        width: 30rem;
+    }
+    
+    .mensagem{
+        width: 30rem;
+    }
+    
+    .input{
+        width: 30rem;
+        height: 2rem;
+    }
+    
+    .input__mensagem{
+        width: 30rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 530px){
+
+    .cabecalho{
+        gap: 2rem;
+    }
+
+    .skills__hobbies__icons{
+        justify-content: space-around;
+    }
+
+    .bnt__repositorio{
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 0.6rem;
+        width: 55px;
+    }
+
+    fieldset{
+        width: 20rem;
+    }
+    
+    .mensagem{
+        width: 20rem;
+    }
+    
+    .input{
+        
+        width: 20rem;
+        height: 2rem;
+    }
+    
+    .input__mensagem{
+        width: 20rem;
+        height: 6rem;
+    }
+}
